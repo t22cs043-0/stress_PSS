@@ -3,7 +3,7 @@ import pandas as pd
 # Person 1 のデータ読み込みとラベル追加
 df1 = pd.read_csv("person1_features.csv")#komorikarin
 original_score=39
-normalized_score = original_score / 56.0 * 10.0
+normalized_score = original_score / 56.0 * 10.0#正規化
 df1["stress_score"] = normalized_score  # Person 1 のPSSスコア（スケーリング済み）
 
 # Person 2 のデータ

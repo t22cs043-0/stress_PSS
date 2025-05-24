@@ -8,7 +8,7 @@ def calc_distance(p1, p2):
     return np.linalg.norm(np.array(p1) - np.array(p2))
 
 def eyebrow_eye_distance(landmarks):
-    # 右目上：159，右眉：285、左目上：386、左眉：55（例）
+    # 右目上：159，右眉：285、左目上：386、左眉：55
     right = calc_distance(landmarks[159], landmarks[285])
     left = calc_distance(landmarks[386], landmarks[55])
     return right, left
